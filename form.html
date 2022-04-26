@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Element</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+        <!-- internal CSS -->
+        <style>
+          label{
+            color: red;
+          }
+          h1 {
+            background-color: gray;
+            color: white;
+          }
+        </style>
+
+
+</head>
+<body>
+  <h1>Form Elements</h1>
+  <!-- 
+      form = parent element
+      input = 
+      label
+      select
+      option
+      textarea
+      button
+
+       attributes:
+            action
+            method
+            type
+            name
+            id
+            for
+            placeorder
+            value
+            required
+            minlength
+            maxlength
+            min
+            max
+
+   -->
+
+   <!-- input controlの作成 -->
+   <!-- inline CSSの利用 -->
+   <form action="https://kredo.jp" method="get" style="background-color:aqua;">
+      <label for="fullname">Your Full Name:</label>
+      <input type="text" name="fullname" id="fullname" placeholder="Last Name First name" required minlength="3" maxlength="20">
+
+      <!-- requiredで入力不備を防ぐ minlength = 最低文字数
+      maxlength = 最大文字数 -->
+
+      <label for="email">Email Address:</label>
+      <input type="email" name="email" id="email" placeholder="youremail@yahoo.com">
+
+      <label for="pword">Your Password:</label>
+      <input type="password" name="password" id="pword" placeholder="Type your password here">
+
+      <label for="birthday">Birth Date:</label>
+      <input type="date" name="birthday" id="birthday">
+
+      <label for="age">Age:</label>
+      <input type="number" name="age" id="age" placeholder="Above 18" min="18" max="60">
+      
+      <div>
+
+        <!-- radio button controlの作成 -->
+        <p>Choose your gender:</p>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" value="female"
+        id="female">
+        <label for="female">Female</label>
+
+        <input type="radio" name="gender" value="lgbt" id="lgbt">
+        <label for="lgbt">LGBT</label>
+      </div>
+
+      <div>
+
+        <!-- check box の作成 -->
+        <p>Choose your favorite food:</p>
+        <input type="checkbox" name="food" value="sushi" id="sushi">
+        <label for="sushi">Sushi</label>
+
+        <input type="checkbox" name="food" value="curry" id="curry">
+        <label for="curry">Curry</label>
+
+        <input type="checkbox" name="food" value="ramen" id="ramen" >
+        <label for="ramen">Ramen</label>
+      </div>
+      
+      <!-- dropdown list box control -->
+       <label for="">Select your car:</label>
+       <select name="car" id="car">
+           <option value="" hidden>Select a car</option>
+           <option value="ferrari">Ferrari</option>
+           <option value="mazda">Mazda</option>
+           <option value="ford">Ford</option>
+           <option value="honda">Honda</option>
+       </select>
+
+       <br>
+
+       <!-- upload -->
+       <label for="">Upload Photo:</label>
+       <input type="file" name="photo" id="photo">
+
+       <br>
+
+      <!-- textの打ち込み -->
+      <label for="">Comments</label>
+      <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Type your comments here."></textarea>
+
+      <!-- buttons -->
+      
+       <button type="submit" name="submit">send</button>
+       <input type="submit" name="submit" value="ok">
+       <input type="image" src="assets/image/gar.jpg"
+       width="60px" height="30px">
+   </form>
+</body>
+</html>

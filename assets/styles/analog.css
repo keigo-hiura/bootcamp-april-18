@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+body{
+  border: 6px double black;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.header h1 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.header h2 {
+  font-size: 40px;
+}
+
+.header h3 {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.nav .lesson {
+  border-top: 5px solid black;
+  border-bottom: 5px solid gray;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lesson a {
+  padding: 20%;
+  color: gray;
+  text-decoration: none;
+}
+
+.section {
+
+}
+.section img {
+  padding: 0 ;
+  width: 50px;
+  margin: 20px 0;
+  width:20%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  width: 80%;
+}

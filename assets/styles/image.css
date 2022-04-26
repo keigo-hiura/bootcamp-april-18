@@ -1,0 +1,27 @@
+/* backgrpund */
+.photo {
+  background:tomato url(../image/junk.jpg)
+  no-repeat center fixed;
+  background-size: cover;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.photo-3 {
+  width:100px
+  height : 100%;
+}
+
+p {
+  background-image: url(../image/gar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: contain; */
+  /* background-size: 200px 200px; */
+  background-position: center center;
+  background-attachment: fixed;
+}
+

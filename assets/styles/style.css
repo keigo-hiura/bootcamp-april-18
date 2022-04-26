@@ -1,0 +1,46 @@
+/* Universal Selector */
+* {
+   color: red;
+}
+
+/* Element selector */
+
+h2 {
+   background-color: teal;
+}
+
+p {
+   background-color: yellowgreen;
+}
+
+a{
+   background-color: yellow;
+}
+
+/* Class Selector */
+.keigo {
+   background-color: magenta;
+}
+.jun {
+   font-size: 40px;
+   color: green;
+}
+/* Id Selector */
+
+#logo-name {
+   text-align:center ;
+   font-size: 50px;
+}
+
+/* ,(and)Selector */
+ol,ul,.yasuko{
+   background-color: thistle;
+}
+
+/* (space) descendant Selector*/
+div p span{
+   background-color: coral;
+}
+div ,div a{
+   background-color: chartreuse;
+}
